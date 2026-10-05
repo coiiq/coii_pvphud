@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>coii pvp hud/title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="preview-scene" hidden aria-hidden="true"><div class="horizon"></div><div class="road"></div></div>
+  <aside id="preview-tools" hidden>
+    <div class="preview-brand">coii <span>/ pvp hud</span></div>
+    <p>Live interface preview</p>
+    <div class="preview-actions"><button id="demo-vehicle">Vehicle</button><button id="demo-holster">Holster / equip</button><button id="demo-damage">Take damage</button><button id="demo-streak">Streak +1</button><button id="demo-streak-level">Streak level</button><button id="demo-empty">Empty slots</button><button id="demo-hide">Toggle HUD</button></div>
+    <small>1–5 select a slot · R reload · H hide controls</small>
+  </aside>
+
+  <main id="hud" hidden aria-label="Player HUD">
+    <section id="info-hud" class="identity" aria-label="Job and accounts">
+      <div class="job-line">
+        <div class="job-copy"><span id="job" class="job-name">Civilian</span><span id="job-separator" class="job-separator" hidden>&nbsp;-&nbsp;</span><span id="grade" class="job-grade"></span></div>
+        <span class="job-icon" aria-hidden="true"><svg><use href="icons.svg#work"/></svg></span>
+      </div>
+      <div class="accounts">
+        <div class="account cash-account" aria-label="Cash"><strong id="cash">$0</strong><span class="account-icon" aria-hidden="true"><svg><use href="icons.svg#cash"/></svg></span></div>
+        <div class="account" aria-label="Bank"><strong id="bank">$0</strong><span class="account-icon" aria-hidden="true"><svg><use href="icons.svg#bank"/></svg></span></div>
+        <div class="account safe-account" aria-label="Job safe"><strong id="safe">—</strong><span class="account-icon" aria-hidden="true"><svg><use href="icons.svg#safe"/></svg></span></div>
+      </div>
+    </section>
+
+    <section id="vehicle" class="vehicle" hidden aria-label="Vehicle instruments">
+      <div class="speed-line"><strong id="speed">000</strong><span id="speed-unit">KM/H</span></div>
+      <div id="rpm-track" class="rpm-track" role="meter" aria-label="Engine RPM" aria-valuemin="0" aria-valuemax="100"><i id="rpm-fill"></i></div>
+      <div class="rpm-label"><span>RPM</span><span id="rpm-value">0%</span></div>
+      <div class="engine-row"><svg><use href="icons.svg#engine"/></svg><span>ENGINE</span><strong id="engine">100%</strong></div>
+    </section>
+
+    <div class="combat-dock">
+      <section id="killstreak" class="killstreak" hidden aria-live="polite" aria-label="Kill streak">
+        <div class="streak-shock" aria-hidden="true"></div>
+        <div class="streak-skull" aria-hidden="true"><svg><use href="icons.svg#skull"/></svg></div>
+        <div class="streak-copy">
+          <strong id="streak-count">00</strong>
+          <em id="streak-tier">HUNTING</em>
+        </div>
+        <div class="streak-level-banner" aria-hidden="true"><strong>LEVEL UP</strong></div>
+        <div class="streak-fragments" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+      <section id="loadout" class="loadout" aria-label="Vitals and quick slots">
+        <div id="combat-summary" class="combat-summary">
+          <div id="status-hud" class="vitals">
+            <div class="vital health"><svg><use href="icons.svg#plus"/></svg><div class="vital-content"><div class="vital-label"><span>HEALTH</span><strong id="health-value">100</strong></div><div class="vital-track" role="meter" aria-label="Health" aria-valuemin="0" aria-valuemax="100" id="health-meter"><i id="health-fill"></i></div></div></div>
+            <div class="vital armor"><svg><use href="icons.svg#shield"/></svg><div class="vital-content"><div class="vital-label"><span>ARMOR</span><strong id="armor-value">0</strong></div><div class="vital-track" role="meter" aria-label="Armor" aria-valuemin="0" aria-valuemax="100" id="armor-meter"><i id="armor-fill"></i></div></div></div>
+          </div>
+          <div id="weapon-panel" class="weapon" aria-hidden="true">
+            <div class="weapon-art"><svg id="weapon-fallback" viewBox="0 0 100 50"><use href="icons.svg#fist"/></svg><img id="weapon-image" alt="" hidden></div>
+            <div class="weapon-copy">
+              <div class="weapon-info"><span id="weapon-status" class="eyebrow">EQUIPPED</span><strong id="weapon-name">Unarmed</strong></div>
+              <div id="ammo" class="ammo" hidden><strong id="clip">00</strong><span class="ammo-divider">/</span><span id="reserve">000</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="slots" class="slots" aria-label="Inventory quick slots"></div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="work" viewBox="0 0 24 24"><path d="M2.5 7h19v14h-19zM8 7V3.5h8V7M2.5 12h7M14.5 12h7M9.5 10h5v4h-5z"/></symbol>
+  <symbol id="skull" viewBox="0 0 24 24"><path d="M4 10.5a8 8 0 0 1 16 0v4.8L17.3 18H15v3h-3v-3h-2v3H7v-3H5.3L4 15.3z"/><path d="m7.5 11 2.5 2.5H7zM16.5 11 14 13.5h3zM12 14.5v2"/></symbol>
+  <symbol id="cash" viewBox="0 0 24 24"><path d="M2.5 5.5h19v13h-19zM6 8.5H4.5V10M18 15.5h1.5V14"/><circle cx="12" cy="12" r="3"/><path d="M8 3.5h15v11" opacity=".55"/></symbol>
+  <symbol id="bank" viewBox="0 0 24 24"><path d="m2.5 8.5 9.5-6 9.5 6H2.5zM3 21.5h18M4 18.5h16M6 10.5v6M10 10.5v6M14 10.5v6M18 10.5v6"/></symbol>
+  <symbol id="safe" viewBox="0 0 24 24"><path d="M3 2.5h18v19H3zM6 5.5h12v13H6z"/><circle cx="12" cy="12" r="3.5"/><path d="M12 8.5v2M15.5 12h-2M12 15.5v-2M8.5 12h2M18 8v3M7 21.5v1m10-1v1"/></symbol>
+  <symbol id="plus" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="shield" viewBox="0 0 24 24"><path d="M12 2 21 5.5v6.2c0 5.2-3.8 8.6-9 10.3-5.2-1.7-9-5.1-9-10.3V5.5z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="car" viewBox="0 0 24 24"><path d="m4 10 2-6h12l2 6M3 10h18v8H3zM6 18v3m12-3v3M6 14h2m8 0h2"/></symbol>
+  <symbol id="engine" viewBox="0 0 24 24"><path d="M6 7h10l3 4h3v7h-5l-2 3H7l-4-5V9h3zM8 3h7m-3 0v4M1 11v5"/></symbol>
+  <symbol id="rifle" viewBox="0 0 100 50"><path d="M8 21h18l6-5h30v4h24v3h10v4H63l-5 4H45l-4 13H30l4-15h-9L8 35z" fill="currentColor" stroke="none"/><path d="M42 16v-4h16v4M71 19v-5M46 31l8 12h9l-6-14"/><path d="M34 21h24" stroke="#48484d"/></symbol>
+  <symbol id="pistol" viewBox="0 0 100 50"><path d="M23 12h58v12H47l-8 22H23l8-25h-8z" fill="currentColor" stroke="none"/><path d="M47 24h13v10H44M28 8v4m46-4v4M33 18h40"/></symbol>
+  <symbol id="bandage" viewBox="0 0 100 50"><g transform="rotate(-25 50 25)"><rect x="21" y="11" width="58" height="28" rx="11"/><rect x="40" y="15" width="20" height="20" rx="3"/><path d="M29 20h1m-1 10h1m40-10h1m-1 10h1M50 20v10m-5-5h10"/></g></symbol>
+  <symbol id="vest" viewBox="0 0 100 50"><path d="M32 7h10l3 8h10l3-8h10l-2 15 5 20H29l5-20z"/><path d="M41 22h18v14H41zM35 27h6m18 0h6M41 29h18"/></symbol>
+  <symbol id="grenade" viewBox="0 0 100 50"><path d="M43 15h17l7 10-4 17H39l-4-17zM45 15V8h13v7M57 8h9l6 19M39 24h24m-25 9h26M46 17l-2 23m11-23 3 23"/><circle cx="41" cy="8" r="4"/></symbol>
+  <symbol id="box" viewBox="0 0 100 50"><path d="m50 8 20 10v22L50 49 30 40V18zM30 18l20 10 20-10M50 28v21M40 13l20 10" transform="translate(0 -3)"/></symbol>
+  <symbol id="fist" viewBox="0 0 100 50"><path d="M35 37 28 25l5-5 7 6V12a4 4 0 0 1 8 0v11V8a4 4 0 0 1 8 0v15V10a4 4 0 0 1 8 0v14V15a4 4 0 0 1 8 0v16l-9 12H41z"/></symbol>
+  <symbol id="empty" viewBox="0 0 100 50"><path d="M44 25h12m-6-6v12"/></symbol>
+</svg>
